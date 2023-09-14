@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo sát nghiên cứu thị trường</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    <hr>
+    <ul>
+        <li>
+            <p><b>What is your age range?</b></p>
+            <select>
+                <option value="age">18-24</option>
+                <option value="age">25-34</option>
+                <option value="age">35-50</option>
+                <option value="age">50+</option>
+            </select>
+        </li>
+        <li>
+            <p><b>What is your yearly income range?</b></p>
+            <select>
+                <option value="income">$0-25.000$</option>
+                <option value="income">25.001 USD - 100.000 USD</option>
+                <option value="income">50.001 USD - 100.000 USD</option>
+                <option value="income">100.000 USD+</option>
+            </select>
+        </li>
+        <li>
+            <p><b>Gender Identity </b></p>
+            <input name="gender" type="radio"> Male <br>
+            <input name="gender" type="radio"> Female <br>
+            <input name="gender" type="radio"> Nonbinary <br>
+            <input name="gender" type="radio"> Other <br>
+            <input name="gender" type="text">
+        </li>
+        <li>
+            <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply. </b></p>
+            <input name="products" type="checkbox"> Product 1 <br>
+            <input name="products" type="checkbox"> Product 2 <br>
+            <input name="products" type="checkbox"> Product 3 <br>
+        </li>
+        <li>
+            <p><b>How often would you use our new product?</b></p>
+            <input name="use" type="radio"> Daily <br>
+            <input name="use" type="radio"> Weekly <br>
+            <input name="use" type="radio"> Monthly <br>
+        </li>
+        <li>
+            <p><b>What would you pay for the new product?</b></p>
+            $ <input name="Dollars" type="number"> . <input name="cents" type="number">
+            <pre>  Dollars                   Cents</pre>
+        </li>
+        <li>
+            <p><b>What features would you like to see the new product.</b></p>
+            <textarea cols="100" rows="10"></textarea>
+        </li>
+        <li>
+            <p><b>Please rate your level of argeement with the following statements.</b></p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                </tr>
+                <tr>
+                    <td><b>Our products are priced fairly.</b></td>
+                    <td><input type="radio" name="point"/>1</td>
+                    <td><input type="radio" name="point"/>2</td>
+                    <td><input type="radio" name="point"/>3</td>
+                    <td><input type="radio" name="point"/>4</td>
+                </tr>
+                <tr>
+                <td><b>Our product are high quality.</b></td>
+                <td><input type="radio" name="point"/>1</td>
+                <td><input type="radio" name="point"/>2</td>
+                <td><input type="radio" name="point"/>3</td>
+                <td><input type="radio" name="point"/>4</td>
+            </tr>
+                <tr>
+                    <td><b>You would recommend our products to a friend or coworker.</b></td>
+                    <td><input type="radio" name="point"/>1</td>
+                    <td><input type="radio" name="point"/>2</td>
+                    <td><input type="radio" name="point"/>3</td>
+                    <td><input type="radio" name="point"/>4</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
