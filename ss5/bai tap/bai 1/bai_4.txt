@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập bán kính R"));
+    function Chuvi(a){
+        let Chuvi = ((a*2)*3.14);
+        return Chuvi;
+    }
+    let kq = Chuvi(a);
+    alert ('Chu vi hình tròn là ' + kq);
+</script>
+</body>
+</html>
